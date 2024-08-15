@@ -35,14 +35,9 @@ android {
 
         // Default values if properties are not found
         val twitterApiKey: String = properties.getProperty("API_KEY", "")
-        val twitterSecretKey: String = properties.getProperty("API_SECRET_KEY", "")
-        val twitterAccessToken: String = properties.getProperty("ACCESS_TOKEN", "")
-        val twitterAccessTokenSecret: String = properties.getProperty("ACCESS_TOKEN_SECRET", "")
 
         buildConfigField("String", "API_KEY", "\"$twitterApiKey\"")
-        buildConfigField("String", "API_SECRET_KEY", "\"$twitterSecretKey\"")
-        buildConfigField("String", "ACCESS_TOKEN", "\"$twitterAccessToken\"")
-        buildConfigField("String", "ACCESS_TOKEN_SECRET", "\"$twitterAccessTokenSecret\"")
+
     }
 
     buildTypes {
